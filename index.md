@@ -1,36 +1,48 @@
 ---
 layout: default
-title: 主页
+title: Home
 ---
 
 <div class="hero">
-  <h1>布布</h1>
+  <h1>BuBu</h1>
   <p>
     PhD Student · Reinforcement Learning · Continuation / Curriculum<br/>
-    这里是我的研究主页：记录长期主线、阶段性成果，以及可追溯的研究日志。
+    This site tracks my research direction, milestones, and a traceable research log.
   </p>
 
   <div class="grid">
-    <a class="cardbtn" href="./log/">
-      <div class="head"><span class="badge">📓</span>研究日志</div>
-      <div class="desc">按年/月/日归档；每篇独立文件，长期积累也不臃肿。</div>
+    <a class="cardbtn" href="./cv/">
+      <div class="head"><span class="badge">📄</span>CV</div>
+      <div class="desc">Academic CV and a short bio.</div>
     </a>
 
     <a class="cardbtn" href="./research/">
-      <div class="head"><span class="badge">🏆</span>研究成果</div>
-      <div class="desc">项目里程碑、论文/预印本、代码与复现实验的统一入口。</div>
+      <div class="head"><span class="badge">🏆</span>Research</div>
+      <div class="desc">Projects, milestones, papers/preprints, and reproducibility notes.</div>
+    </a>
+
+    <a class="cardbtn" href="./log/">
+      <div class="head"><span class="badge">📓</span>Research Log</div>
+      <div class="desc">Year/Month/Day archive. Each entry is a standalone post.</div>
+    </a>
+
+    <a class="cardbtn" href="./code/">
+      <div class="head"><span class="badge">💻</span>Code</div>
+      <div class="desc">Repositories, experiments, and implementation notes.</div>
     </a>
   </div>
 
   <div class="section">
-    <h2>当前主线</h2>
-    <p>ConDiff（2026）：β-annealing / thin-channel exploration / MassPoint 系列实验与论文写作。</p>
+    <h2>Current Focus</h2>
+    <p>
+      ConDiff (2026): β-annealing · thin-channel exploration · MassPoint experiments · paper writing.
+    </p>
 
-    <h3>近期目标</h3>
+    <h3>Near-term Goals</h3>
     <ul class="list">
-      <li>MassPoint：稳定复现 + 训练循环干净化</li>
-      <li>对比：固定 β（MaxDiff baseline）vs 分阶段 β（curriculum）</li>
-      <li>形成可写的实验叙事：曲线、消融、失败案例与解释</li>
+      <li>MassPoint: stable reproduction + a clean training loop</li>
+      <li>Compare fixed-β (MaxDiff baseline) vs staged-β (curriculum)</li>
+      <li>Build a publishable experiment narrative: curves, ablations, failure modes, and explanations</li>
     </ul>
   </div>
 </div>
