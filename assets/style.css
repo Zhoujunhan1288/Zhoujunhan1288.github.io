@@ -224,3 +224,25 @@ a:hover{ color: #1d4ed8; }
   border-color: rgba(37,99,235,.45);
   background: rgba(37,99,235,.10);
 }
+
+.nav-zh{
+  font-weight: 700;
+}
+
+.nav-sep{
+  opacity: .35;
+  margin: 0 6px;
+}
+
+.nav-en{
+  opacity: .75;
+  font-weight: 600;
+}
+
+/* 手机端只显示中文，避免导航挤爆 */
+@media (max-width: 720px){
+  .nav-en,
+  .nav-sep{
+    display:none;
+  }
+}
