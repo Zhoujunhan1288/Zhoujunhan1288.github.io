@@ -7,28 +7,54 @@
   <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
+
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      
+      <a class="brand" href="{{ '/' | relative_url }}">
+        {{ site.title }}
+      </a>
+
       <nav class="nav">
         {% assign u = page.url %}
-      
+
         <a href="{{ '/' | relative_url }}"
-           class="{% if u == '/' %}active{% endif %}">主页Home</a>
-      
+           class="{% if u == '/' %}active{% endif %}">
+          <span class="nav-zh">主页</span>
+          <span class="nav-sep">·</span>
+          <span class="nav-en">Home</span>
+        </a>
+
         <a href="{{ '/cv/' | relative_url }}"
-           class="{% if u == '/cv/' %}active{% endif %}">个人简历CV</a>
-      
+           class="{% if u == '/cv/' %}active{% endif %}">
+          <span class="nav-zh">个人简历</span>
+          <span class="nav-sep">·</span>
+          <span class="nav-en">CV</span>
+        </a>
+
         <a href="{{ '/log/' | relative_url }}"
-           class="{% if u == '/log/' or u contains '/log/' %}active{% endif %}">研究日志Research Log</a>
-      
+           class="{% if u == '/log/' or u contains '/log/' %}active{% endif %}">
+          <span class="nav-zh">研究日志</span>
+          <span class="nav-sep">·</span>
+          <span class="nav-en">Research Log</span>
+        </a>
+
         <a href="{{ '/research/' | relative_url }}"
-           class="{% if u == '/research/' or u contains '/research/' %}active{% endif %}">研究成果Research</a>
-      
+           class="{% if u == '/research/' or u contains '/research/' %}active{% endif %}">
+          <span class="nav-zh">研究成果</span>
+          <span class="nav-sep">·</span>
+          <span class="nav-en">Research</span>
+        </a>
+
         <a href="{{ '/code/' | relative_url }}"
-           class="{% if u == '/code/' or u contains '/code/' %}active{% endif %}">项目代码Code</a>
-    </nav>
+           class="{% if u == '/code/' or u contains '/code/' %}active{% endif %}">
+          <span class="nav-zh">项目代码</span>
+          <span class="nav-sep">·</span>
+          <span class="nav-en">Code</span>
+        </a>
+      </nav>
+
     </div>
   </header>
 
