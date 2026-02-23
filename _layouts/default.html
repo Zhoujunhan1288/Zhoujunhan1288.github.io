@@ -15,19 +15,19 @@
         {% assign u = page.url %}
       
         <a href="{{ '/' | relative_url }}"
-           class="{% if u == '/' %}active{% endif %}">主页</a>
+           class="{% if u == '/' %}active{% endif %}">主页Home</a>
       
         <a href="{{ '/cv/' | relative_url }}"
-           class="{% if u == '/cv/' %}active{% endif %}">个人简历</a>
+           class="{% if u == '/cv/' %}active{% endif %}">个人简历CV</a>
       
         <a href="{{ '/log/' | relative_url }}"
-           class="{% if u == '/log/' or u contains '/log/' %}active{% endif %}">研究日志</a>
+           class="{% if u == '/log/' or u contains '/log/' %}active{% endif %}">研究日志Research Log</a>
       
         <a href="{{ '/research/' | relative_url }}"
-           class="{% if u == '/research/' or u contains '/research/' %}active{% endif %}">研究成果</a>
+           class="{% if u == '/research/' or u contains '/research/' %}active{% endif %}">研究成果Research</a>
       
         <a href="{{ '/code/' | relative_url }}"
-           class="{% if u == '/code/' or u contains '/code/' %}active{% endif %}">项目代码</a>
+           class="{% if u == '/code/' or u contains '/code/' %}active{% endif %}">项目代码Code</a>
     </nav>
     </div>
   </header>
