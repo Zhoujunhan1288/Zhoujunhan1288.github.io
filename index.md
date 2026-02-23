@@ -4,9 +4,9 @@ title: Home
 ---
 
 <div class="hero">
-  <h1>BuBu</h1>
+  <h1>周峻涵 Zhou JunHan</h1>
   <p>
-    PhD Student · Reinforcement Learning · Continuation / Curriculum<br/>
+    PhD Student · Continuation / Curriculum Reinforcement Learning<br/>
     This site tracks my research direction, milestones, and a traceable research log.
   </p>
 
