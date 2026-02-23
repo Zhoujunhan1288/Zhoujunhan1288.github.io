@@ -1,60 +1,38 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>布布 · 个人主页</title>
-  <style>
-    :root { --bg:#0b1220; --card:#121a2b; --text:#e7ecff; --muted:#aab3d6; --accent:#6aa7ff; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:var(--bg); color:var(--text); }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
-    .title { font-size: 34px; margin: 0 0 8px; letter-spacing: .2px; }
-    .subtitle { margin: 0 0 28px; color: var(--muted); line-height: 1.6; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    .btn {
-      display:flex; flex-direction:column; gap:8px;
-      padding: 18px 18px; border-radius: 16px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.10);
-      text-decoration:none; color: var(--text);
-      transition: transform .08s ease, border-color .12s ease;
-      min-height: 92px;
-    }
-    .btn:hover { transform: translateY(-2px); border-color: rgba(106,167,255,.55); }
-    .btn .head { display:flex; align-items:center; gap:10px; font-size: 18px; font-weight: 650; }
-    .badge { width: 34px; height: 34px; display:grid; place-items:center; border-radius: 10px;
-      background: rgba(106,167,255,.16); border: 1px solid rgba(106,167,255,.35); }
-    .btn .desc { color: var(--muted); font-size: 14px; line-height: 1.5; margin-left: 44px; }
-    .section { margin-top: 26px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.10); }
-    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <h1 class="title">布布</h1>
-    <p class="subtitle">
-      PhD Student · Reinforcement Learning · Continuation / Curriculum<br/>
-      这里记录我的研究进展与阶段性成果。
+---
+layout: default
+title: 主页
+---
+
+<div class="hero">
+  <h1>布布</h1>
+  <p>
+    PhD Student · Reinforcement Learning · Continuation / Curriculum<br/>
+    这里是我的研究主页：记录长期主线、阶段性成果，以及可追溯的研究日志。
+  </p>
+
+  <div class="grid">
+    <a class="cardbtn" href="./log/">
+      <div class="head"><span class="badge">📓</span>研究日志</div>
+      <div class="desc">按天记录关键进展（每篇独立文章），支持长期积累而不臃肿。</div>
+    </a>
+
+    <a class="cardbtn" href="./research/">
+      <div class="head"><span class="badge">🏆</span>研究成果</div>
+      <div class="desc">项目里程碑、论文/预印本、代码与复现实验的统一入口。</div>
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>当前主线</h2>
+    <p>
+      ConDiff（2026）：β-annealing / thin-channel exploration / MassPoint 系列实验与论文写作。
     </p>
 
-    <div class="grid">
-      <a class="btn" href="./log.html">
-        <div class="head"><span class="badge">📓</span>研究日志</div>
-        <div class="desc">按日期记录关键进展、实验结论、下一步计划。</div>
-      </a>
-
-      <a class="btn" href="./research.html">
-        <div class="head"><span class="badge">🏆</span>研究成果</div>
-        <div class="desc">论文/预印本、项目里程碑、代码与复现实验汇总。</div>
-      </a>
-    </div>
-
-    <div class="section">
-      <h2 style="margin:0 0 10px;">当前主线</h2>
-      <p style="margin:0;color:var(--muted);line-height:1.7;">
-        ConDiff（2026）：β-annealing、thin-channel exploration、MassPoint 系列实验与论文写作。
-      </p>
-    </div>
+    <h3>近期目标（示例）</h3>
+    <ul class="list">
+      <li>MassPoint 环境：稳定复现 + 训练循环干净化</li>
+      <li>对比：固定 β（MaxDiff baseline）vs 分阶段 β（curriculum）</li>
+      <li>形成可写的实验叙事：曲线、消融、失败案例与解释</li>
+    </ul>
   </div>
-</body>
-</html>
+</div>
