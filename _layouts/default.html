@@ -19,15 +19,15 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container page">
     {{ content }}
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="muted">
-        © {{ "now" | date: "%Y" }} {{ site.title }} · Built with GitHub Pages
-      </div>
+    <div class="container footer-inner">
+      <span>© {{ "now" | date: "%Y" }} {{ site.title }}</span>
+      <span class="sep">·</span>
+      <span class="muted">Hosted on GitHub Pages</span>
     </div>
   </footer>
 </body>
