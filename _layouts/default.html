@@ -13,8 +13,10 @@
       <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="nav">
         <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">主页</a>
+        <a href="{{ '/cv/' | relative_url }}" class="{% if page.url contains '/research' %}active{% endif %}">个人简历</a>
         <a href="{{ '/log/' | relative_url }}" class="{% if page.url contains '/log' %}active{% endif %}">研究日志</a>
         <a href="{{ '/research/' | relative_url }}" class="{% if page.url contains '/research' %}active{% endif %}">研究成果</a>
+        <a href="{{ '/code/' | relative_url }}" class="{% if page.url contains '/research' %}active{% endif %}">项目代码</a>
       </nav>
     </div>
   </header>
