@@ -6,5 +6,5 @@ permalink: /tag/website/
 ---
 
 <p>
-  <a class="backbtn" href="{{ '/tags/' | relative_url }}">← Back to Tags Log</a>
+  <a class="backbtn" href="{{ '/tags/' | relative_url }}">← Back to Tags</a>
 </p>
