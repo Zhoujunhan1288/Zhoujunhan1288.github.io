@@ -6,7 +6,8 @@ title: Home
 <div class="hero">
   <h1>周峻涵 Zhou JunHan</h1>
   <p>
-    PhD Student · Continuation / Curriculum Reinforcement Learning<br/>
+    Master Student<br/>
+    Continuation / Curriculum Reinforcement Learning<br/>
     This site tracks my research direction, milestones, and a traceable research log.
   </p>
 
