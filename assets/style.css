@@ -193,3 +193,18 @@ a:hover{ color: #1d4ed8; }
   .grid{ grid-template-columns: 1fr; }
   .page h1{ font-size: 28px; }
 }
+
+.backbtn{
+  display:inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  text-decoration:none;
+}
+.backbtn:hover{
+  border-color: rgba(37,99,235,.25);
+  background: rgba(37,99,235,.06);
+  color: var(--accent);
+}
