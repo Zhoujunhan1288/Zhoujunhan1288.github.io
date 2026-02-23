@@ -4,6 +4,16 @@ layout: default
 
 <h1>#{{ page.tag }}</h1>
 
+<!-- 如果某个 tag 页面（tag-xxx.md）写了返回按钮/说明文字，这里会显示 -->
+{{ content }}
+
+<!-- 如果 tag-xxx.md 没写任何内容，也给一个默认返回 -->
+{% if content == "" %}
+<p>
+  <a class="backbtn" href="{{ '/tags/' | relative_url }}">← Back to Tags</a>
+</p>
+{% endif %}
+
 <div class="section"></div>
 
 {% assign posts = site.tags[page.tag] %}
