@@ -10,19 +10,11 @@ permalink: /cv/
 
 **Zhejiang University**  
 B.E. in Aircraft Design and Engineering  
-Sep 2021 – Present  
+Sep 2021 – Aug 2025  
 
 ---
 
 ## Research Experience
-
-### Design of Fire Satellite Based on MBSE  
-Apr 2023 – Present  
-
-- Working with Prof. Meng Tao (Zhejiang University)  
-- Participating in the system-level design of a fire CubeSat using Model-Based Systems Engineering (MBSE)  
-- Using *Camel Systems Modeler* for system architecture modeling and documentation  
-- Contributing to overall system design report and model validation  
 
 ---
 
@@ -37,9 +29,7 @@ Apr 2023 – Present
 
 ## Skills
 
-**Programming:** C, Java  
-**Engineering Software:** Abaqus, SolidWorks  
-**English Proficiency:** CET-4 (560/710), CET-6 (497/710)  
+**Programming:** Python   
 
 ---
 
