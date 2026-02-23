@@ -1,1 +1,13 @@
+title: 布布
+description: PhD Research Log & Outcomes
+theme: null
 
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+# 让 GitHub Pages 正常构建
+plugins:
+  - jekyll-feed
+
+# 可选：如果你之后想加 GitHub 按钮/链接
+# github_username: yourname
