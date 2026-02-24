@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post-article">
+
+<h1>{{ page.title }}</h1>
+
+<div class="post-meta">
+  {{ page.date | date: "%Y-%m-%d" }}
+  {% if page.type %} · <strong>{{ page.type }}</strong>{% endif %}
+</div>
+
+<div class="section"></div>
+
+{{ content }}
+
+<div class="section"></div>
+
+{% if page.tags %}
+<p>
+  {% for t in page.tags %}
+    <a class="tag" href="{{ '/tag/' | append: t | append: '/' | relative_url }}">#{{ t }}</a>
+  {% endfor %}
+</p>
+{% endif %}
+
+</article>
