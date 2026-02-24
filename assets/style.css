@@ -316,3 +316,11 @@ a:hover{ color: #1d4ed8; }
   padding-left:18px;
   line-height:1.9;
 }
+
+@media (min-width: 900px){
+  .cv-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
