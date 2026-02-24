@@ -294,22 +294,25 @@ a:hover{ color: #1d4ed8; }
   background: rgba(37,99,235,.12);
 }
 
-/* ===== Research Card ===== */
 .research-card{
-  padding: 18px 20px;
+  padding: 20px 22px;
   border-radius: 18px;
   border: 1px solid var(--border);
-  background:#ffffff;
+  background: #ffffff;
   box-shadow: 0 8px 20px rgba(17,24,39,.05);
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
-/* ===== Milestones ===== */
 .milestone-list{
-  padding: 18px 20px;
+  padding: 18px 22px;
   border-radius: 18px;
   border: 1px dashed var(--border);
-  background:#ffffff;
-  line-height: 1.9;
+  background: #ffffff;
   box-shadow: 0 6px 16px rgba(17,24,39,.04);
+}
+
+.milestone-list ul{
+  margin:0;
+  padding-left:18px;
+  line-height:1.9;
 }
