@@ -7,76 +7,90 @@ permalink: /research/
 <div class="hero">
   <h1>Research</h1>
   <p>
-    Public-facing research overview, milestones, working papers, and reproducibility notes.
-    This page tracks the long-term research program rather than daily progress.
+    Public-facing overview of long-term research directions, milestones,
+    working papers, and reproducibility structure.
   </p>
 </div>
 
 <div class="section"></div>
 
-## Research Program
+<h2>Research Program</h2>
 
 <div class="research-card">
 
-### Phase 1 · ConDiff (2026)
+  <h3>Phase 1 · ConDiff (2026)</h3>
 
-**Core Idea**  
-Continuation / curriculum mechanisms for stabilizing exploration in thin-channel or underactuated environments.
+  <p>
+    <strong>Core Idea</strong><br>
+    Continuation / curriculum mechanisms for stabilizing exploration
+    in thin-channel or underactuated environments.
+  </p>
 
-**Key Questions**
-- How does β scheduling reshape the exploration manifold?
-- Can staged continuation reduce failure modes in sparse/delayed reward regimes?
-- What is the structural difference between fixed-β and staged-β training?
+  <p><strong>Key Questions</strong></p>
+  <ul>
+    <li>How does β scheduling reshape the exploration manifold?</li>
+    <li>Can staged continuation reduce failure modes in sparse or delayed reward regimes?</li>
+    <li>What structural differences emerge between fixed-β and staged-β training?</li>
+  </ul>
 
-**Experimental Platforms**
-- MassPoint (underactuated x-axis setting)
-- Swimmer / Ant (progressive scaling)
+  <p><strong>Experimental Platforms</strong></p>
+  <ul>
+    <li>MassPoint (underactuated x-axis setting)</li>
+    <li>Swimmer / Ant (progressive scaling)</li>
+  </ul>
 
 </div>
 
 <div class="section"></div>
 
-## Working Papers / In Progress
+<h2>Working Papers / In Progress</h2>
 
 <div class="research-card">
 
-### ConDiff: β-Annealing for Thin-Channel Exploration  
-*Status: In preparation*
+  <h3>ConDiff: β-Annealing for Thin-Channel Exploration</h3>
 
-- Experimental framework constructed
-- Baseline fixed-β replication underway
-- Stage-switch logic validation in progress
-- Failure mode categorization under refinement
+  <p><em>Status: In preparation</em></p>
 
-**Next Steps**
-- Align fixed-β baseline results
-- Validate stage switching (episode/frame vs max steps)
-- Produce core ablation plots
-- Draft Introduction + Method section
+  <ul>
+    <li>Experimental framework constructed</li>
+    <li>Baseline fixed-β replication underway</li>
+    <li>Stage-switch logic validation in progress</li>
+    <li>Failure mode categorization under refinement</li>
+  </ul>
+
+  <p><strong>Next Steps</strong></p>
+  <ul>
+    <li>Align fixed-β baseline results</li>
+    <li>Validate stage switching (episode/frame vs max steps)</li>
+    <li>Produce core ablation plots</li>
+    <li>Draft Introduction + Method section</li>
+  </ul>
 
 </div>
 
 <div class="section"></div>
 
-## Milestones
+<h2>Milestones</h2>
 
 <div class="milestone-list">
-
-- ☐ Baseline: Stable reproduction of fixed-β MaxDiff  
-- ☐ Curriculum: Stage-switch without training conflict  
-- ☐ Figure Pack: Reward curves · Stage trace · Success rate  
-- ☐ Draft v1: Introduction + Method + Experiments skeleton  
-
+  <ul>
+    <li>☐ Stable reproduction of fixed-β MaxDiff</li>
+    <li>☐ Stage-switch without training conflict</li>
+    <li>☐ Figure Pack: reward curves · stage trace · success rate</li>
+    <li>☐ Draft v1: Introduction + Method + Experiments skeleton</li>
+  </ul>
 </div>
 
 <div class="section"></div>
 
-## Code & Reproducibility
+<h2>Code & Reproducibility</h2>
 
 <div class="research-card">
 
-- GitHub Repository: (coming soon)
-- Reproducibility Notes: seeds, configs, and command-line records linked in Research Log
-- Experimental traceability maintained through staged logging
+  <ul>
+    <li><strong>GitHub Repository:</strong> (coming soon)</li>
+    <li><strong>Reproducibility:</strong> seeds, configs, and command logs linked in Research Log</li>
+    <li><strong>Traceability:</strong> staged logging and experiment tracking maintained</li>
+  </ul>
 
 </div>
