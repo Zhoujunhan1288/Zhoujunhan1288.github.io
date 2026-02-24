@@ -1,43 +1,82 @@
 ---
 layout: default
-title: 研究成果
+title: Research
 permalink: /research/
 ---
 
-# 研究成果
+<div class="hero">
+  <h1>Research</h1>
+  <p>
+    Public-facing research overview, milestones, working papers, and reproducibility notes.
+    This page tracks the long-term research program rather than daily progress.
+  </p>
+</div>
 
-这里放“对外可读”的内容：项目概览、里程碑、论文/预印本、代码与复现实验入口。  
-（你现在还没发表也完全没关系：先从 **Working / In progress** 写起。）
-
----
+<div class="section"></div>
 
 ## Research Program
 
-### Phase 1 · ConDiff（2026）
-- **Goal**：用 continuation/curriculum 思想让探索在“thin-channel / 欠控制”环境中更稳定、更可解释  
-- **Core knobs**：β schedule、stage switching、reward shaping robustness、failure mode taxonomy  
-- **Envs**：MassPoint（欠控制 x 轴）、Swimmer / Ant（逐步扩展）
+<div class="research-card">
 
----
+### Phase 1 · ConDiff (2026)
 
-## Working / In Progress
+**Core Idea**  
+Continuation / curriculum mechanisms for stabilizing exploration in thin-channel or underactuated environments.
 
-- **ConDiff: β-annealing for thin-channel exploration**（in preparation）  
-  - Status：实验与叙事框架搭建中  
-  - Next：baseline 固定 β 完整对齐；stage 切换逻辑验证；做关键消融
+**Key Questions**
+- How does β scheduling reshape the exploration manifold?
+- Can staged continuation reduce failure modes in sparse/delayed reward regimes?
+- What is the structural difference between fixed-β and staged-β training?
 
----
+**Experimental Platforms**
+- MassPoint (underactuated x-axis setting)
+- Swimmer / Ant (progressive scaling)
 
-## Milestones（里程碑）
+</div>
 
-- [ ] Baseline：固定 β 的 MaxDiff 跑通并稳定复现  
-- [ ] Curriculum：分阶段 β 切换无冲突（episode/frame 与 max steps 对齐）  
-- [ ] Figure pack：核心图表模板（reward curve / stage trace / success rate）  
-- [ ] Draft v1：Introduction + Method + Experiments 骨架
+<div class="section"></div>
 
----
+## Working Papers / In Progress
 
-## Code / Repro
+<div class="research-card">
 
-- GitHub Repo：稍后放链接  
-- Repro Notes：建议把关键命令行、seed、配置写在日志里（可追溯）
+### ConDiff: β-Annealing for Thin-Channel Exploration  
+*Status: In preparation*
+
+- Experimental framework constructed
+- Baseline fixed-β replication underway
+- Stage-switch logic validation in progress
+- Failure mode categorization under refinement
+
+**Next Steps**
+- Align fixed-β baseline results
+- Validate stage switching (episode/frame vs max steps)
+- Produce core ablation plots
+- Draft Introduction + Method section
+
+</div>
+
+<div class="section"></div>
+
+## Milestones
+
+<div class="milestone-list">
+
+- ☐ Baseline: Stable reproduction of fixed-β MaxDiff  
+- ☐ Curriculum: Stage-switch without training conflict  
+- ☐ Figure Pack: Reward curves · Stage trace · Success rate  
+- ☐ Draft v1: Introduction + Method + Experiments skeleton  
+
+</div>
+
+<div class="section"></div>
+
+## Code & Reproducibility
+
+<div class="research-card">
+
+- GitHub Repository: (coming soon)
+- Reproducibility Notes: seeds, configs, and command-line records linked in Research Log
+- Experimental traceability maintained through staged logging
+
+</div>
