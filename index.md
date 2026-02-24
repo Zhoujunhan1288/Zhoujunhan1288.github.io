@@ -8,7 +8,8 @@ title: Home
   <p>
     Master Student<br/>
     Continuation / Curriculum Reinforcement Learning<br/>
-    This site tracks my research direction, milestones, and a traceable research log.
+    This site tracks my research direction, milestones, and a traceable research log.<br/>
+    Last update:24/02/2026
   </p>
 
   <div class="grid">
